@@ -2,7 +2,7 @@
 
 To run Rad Reviews, clone the repo and run `yarn start`.
 
-### Rad Reviews
+### Requirements
 
 This demo has been built as per the brief provided. A user can navigate from the home page to the Reviews page and back.
 
