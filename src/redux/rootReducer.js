@@ -3,7 +3,7 @@ import { reducer as toastrReducer } from "react-redux-toastr";
 import ratingsReducer from "./ratings/ratingsReducer.js";
 
 const rootReducer = combineReducers({
-  ratings: ratingsReducer,
+  ratingsState: ratingsReducer,
   toastr: toastrReducer
 });
 
