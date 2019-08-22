@@ -50,10 +50,7 @@ function Rater(props) {
       return starEmpty;
     }
 
-    if (props.currentRating) {
-      if (props.currentRating >= rating) return starAvg;
-      return starOutline;
-    }
+    if (props.currentRating && props.currentRating >= rating) return starAvg;
 
     return starOutline;
   };
@@ -78,6 +75,7 @@ function Rater(props) {
         return (
           <img
             key={rating}
+            alt={`Rate ${rating}`}
             src={getImage(rating)}
             onMouseEnter={() => setHovered(rating)}
             onMouseLeave={() => setHovered(null)}
